@@ -6,6 +6,9 @@ class AB implements Runnable{
 		
 		System.out.println("The state of current thread inside run of AB for thread " + Thread.currentThread().getName() + " is " + Thread.currentThread().getState());
 		
+		// Thread.currentThread().interrupt(); the next lines is not executed and t1's run is called
+		// ThreadStateLearn.t1.interrupt();
+		
 		System.out.println("The state of t1 inside AB " + ThreadStateLearn.t1.getState());
 		try {
 			
