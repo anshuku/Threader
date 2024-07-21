@@ -24,6 +24,7 @@ public class BillPughInstance {
 		Set<BillPughSingleton> setHoldingSingletonObj = new HashSet<>();
 		List<Future<BillPughSingleton>> futures = new ArrayList<>();
 
+		//Created a thread pool which reuses a fixed number of thread from an unbounded queue.
 		ExecutorService executorService = Executors.newFixedThreadPool(10);
 
 		System.out.println("1 the current thread is " + Thread.currentThread().getName());
